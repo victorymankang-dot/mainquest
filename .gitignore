@@ -1,0 +1,17 @@
+# Templum Salutis — never commit secrets or machine artifacts
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated client config (built from .env by scripts/gen-config.mjs)
+js/config.js
+
+# Build/deploy artifacts
+dist/
+node_modules/
+
+# Logs & OS noise
+*.log
+.DS_Store
+Thumbs.db
